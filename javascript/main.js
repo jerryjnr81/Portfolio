@@ -23,11 +23,19 @@ ScrollReveal().reveal('.home-content p, .about-content p, .service-box h3, .proj
 
 
 
-//TYPED JS
-const typed = new Typed('.multiple-text', {
-    strings: ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll(".navbar a").
+forEach(link => {
+    if(link.href.includes(`${activePage}`)) {
+        link.classList.add("active");
+    }
+})
+
+// //TYPED JS
+// const typed = new Typed('.multiple-text', {
+//     strings: ['Web Developer', 'Frontend Developer', 'Backend Developer', 'Full Stack Developer'],
+//     typeSpeed: 100,
+//     backSpeed: 100,
+//     backDelay: 1000,
+//     loop: true
+// });
