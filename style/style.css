@@ -427,6 +427,9 @@ span{
     .navbar{
         display: none;
     }
+    .navbar a{
+        color: var(--text-color);
+    }
     .navbar.active{
         display: flex;
         flex-direction: column;
@@ -497,7 +500,3 @@ span{
         max-width: 30rem;
     }
 }
-/* HIDE IGNORE COMMENTS */
-/* IGNORE COMMENTS */
-/* IGNORE COMMENTS
-
